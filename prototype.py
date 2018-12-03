@@ -53,14 +53,6 @@ def convert_int(coord):
         return -1
 
 
-def disemvowel(word):
-    newword = ""
-    for letter in word:
-        if (letter not in 'aeiou'):
-            newword += letter
-    return newword
-
-
 def player_turn(board, letter, possible_moves):
     print(board)
     row = convert_int(input("Select Row: "))
